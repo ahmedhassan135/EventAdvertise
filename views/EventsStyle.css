@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400');
+
+
+
+
+.row
+{
+  margin-top: 5%;
+}
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0); 
+  transform-style: preserve-3d; 
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none!important; 
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #131313;
+  color: #f5f5f5;
+  font-family: 'Fira Sans';
+  text-align: left;
+  overflow-x: hidden;
+}
+
+.container{
+  width:100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: row;
+  perspective: 1000px;
+  perspective-origin: center;
+}
+
+.col{
+  height:  100%;
+  transition: transform 600ms cubic-bezier(0.390, 0.575, 0.565, 1.000), opacity 300ms ease;
+  transform: translateZ(34px) scale(.98);
+  flex: 0 0 33.3333%; 
+  position: relative;
+}
+
+.col:nth-of-type(1){
+  transform: rotateY(5deg) translateZ(34px) scale(.98);
+}
+
+.col:nth-of-type(3){
+  transform: rotateY(-5deg) translateZ(34px) scale(.98);
+}
+
+.col:hover,
+.col:focus{
+  transform: translateZ(34px);
+  transition: transform 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000), opacity 300ms ease;
+}
+
+.card-container{
+  position: relative;
+  width: calc(100% - 25px);
+  height:  calc(33.3% - 25px);
+  margin: 17px;
+  padding: 8px;
+  text-align: center;
+  opacity: 100;
+  display:block
+}
+
+.card-container:hover,
+.card-container:focus{
+  opacity: 100;
+}
+
+.overlay{
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  width: 50%;
+  height: 50%;
+  z-index: 1;
+  transform: translateZ(34px);
+}
+
+.overlay:nth-of-type(1){
+  left: 0;
+  top: 0;
+}
+
+.overlay:nth-of-type(2){
+  right: 0;
+  top: 0;
+}
+
+.overlay:nth-of-type(3){
+  bottom: 0;
+  right: 0;
+}
+
+.overlay:nth-of-type(4){
+  bottom: 0;
+  left: 0;
+}
+
+.overlay:nth-of-type(1):hover ~ .card,
+.overlay:nth-of-type(1):focus ~ .card{
+  transform-origin: right top;
+  transform: rotateX(3deg) rotateY(-3deg) translateZ(0);
+}
+
+.overlay:nth-of-type(2):hover ~ .card,
+.overlay:nth-of-type(2):focus ~ .card{
+  transform-origin: left top;
+  transform: rotateX(3deg) rotateY(3deg) translateZ(0);
+}
+
+.overlay:nth-of-type(3):hover ~ .card,
+.overlay:nth-of-type(3):focus ~ .card{
+  transform-origin: left bottom;
+  transform: rotateX(-3deg) rotateY(3deg) translateZ(0);
+}
+
+.overlay:nth-of-type(4):hover ~ .card,
+.overlay:nth-of-type(4):focus ~ .card{
+  transform-origin: right bottom;
+  transform: rotateX(-3deg) rotateY(-3deg) translateZ(0);
+}
+
+.card{
+  border-radius: 5px;
+  height: 100%;
+  transition: all 300ms ease-out;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 0;
+  opacity: .89;
+  padding: 13px 21px;
+}
+
+.card:before,
+.card:after{
+  content: '';
+  position: absolute;
+  left:0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: .99;
+  transition: transform 300ms ease;
+  transform: scale(.98);
+}
+
+.card:before{
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.card-container:hover .card:before,
+.card-container:hover .card:after,
+.card-container:focus .card:before,
+.card-container:focus .card:after{
+  opacity: .50;
+  transform: scale(1);
+}
+
+.col:nth-of-type(1) .card-container:nth-of-type(1) .card:before{
+      background-image: url('ball-field-game-46798.jpg');
+}
+
+.col:nth-of-type(2) .card-container:nth-of-type(1) .card:before{
+      background-image: url('analogue-buttons-close-up-159438.jpg');
+}
+
+.col:nth-of-type(3) .card-container:nth-of-type(1) .card:before{
+      background-image: url('adventure-blur-cartography-408503.jpg');
+}
+
+.col:nth-of-type(1) .card-container:nth-of-type(2) .card:before{
+      background-image: url('bass-bowed-stringed-instrument-classic-258283.jpg');
+}
+
+.col:nth-of-type(2) .card-container:nth-of-type(2) .card:before{
+      background-image: url('audience-band-concert-1105666.jpg');
+}
+
+.col:nth-of-type(3) .card-container:nth-of-type(2) .card:before{
+      background-image: url('art-artist-brush-102127.jpg');
+}
+
+.col:nth-of-type(1) .card-container:nth-of-type(3) .card:before{
+      background-image: url('adults-analysis-brainstorming-1661004.jpg');
+}
+
+.col:nth-of-type(2) .card-container:nth-of-type(3) .card:before{
+      background-image: url('adventure-boat-exotic-1371360.jpg');
+}
+
+.col:nth-of-type(3) .card-container:nth-of-type(3) .card:before{
+      background-image: url('adult-competition-concentration-929831.jpg');
+}
+
+.card:after{
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 50%,rgba(0,0,0,0.89) 100%);
+}
+
+h2{
+  text-align: left;
+  font-size: 18px;
+  font-weight:1000;
+  transform: translateY(5px);
+  transition: transform 450ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  max-width: 320px;
+  outline: 1px solid transparent;
+  
+}
+
+.overlay:hover ~ .card h2,
+.overlay:focus ~ .card h2{
+  transform: translateZ(144px);
+}
+
+.card > span{
+  font-size: 34px;
+  opacity: 0;
+  transform: translateX(-3px);
+  transition: all 300ms ease;
+}
+
+.card-container:hover > .card > h4,
+.card-container:focus > .card > h4{
+  transform: translateY(-13px);
+}
+
+.card-container:hover > .card > span,
+.card-container:focus > .card > span{
+ opacity: 1;
+    transform: translateX(3px);
+  animation: slideRight 300ms ease;
+}
+
+@media (max-width: 768px){
+  body{
+    overflow-y: scroll;
+  }
+  h2{
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 540px){
+  .container{
+    flex-flow: column;
+    perspective: none;
+  }
+  
+  .col:nth-of-type(1),
+  .col:nth-of-type(2),
+  .col:nth-of-type(3),
+  .col:hover{
+      transform: none;
+  }
+  
+  h2{
+    padding-bottom: 8px;
+    font-size: 18px;
+  }
+  
+.card > span{
+      display: none;
+  }
+}
+
+@media (max-height: 599px){
+.card > span{
+      display: none;
+  }
+}
+
+@media (max-width: 860px) and (max-height: 540px){
+  h2{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 620px) and (max-height: 540px){
+  h2{
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 1300px) 
+{
+    .navbar-nav
+    {
+        position: relative;
+        left: 10%!important;
+    }
+
+   
+}
+
+@media only screen and (max-width: 1100px) 
+{
+    .navbar-nav
+    {
+        position: relative;
+        left: 10%!important;
+    }
+
+    
+   
+}
+
+@media only screen and (max-width: 1400px) 
+{
+    .navbar-nav
+    {
+        position: relative;
+        left: 10%!important;
+    }
+
+    
+   
+}
+
+@media only screen and (max-width: 1100px) 
+{
+    .navbar-nav
+    {
+        position: relative;
+        left: 10%!important;
+    }
+   
+}
+
+.navbar
+{
+  opacity: 0.7;
+}
+
+.navbar-brand
+{
+    color: white!important;
+    font-family: Verdana;
+    font-size: 2rem;
+}
+
+.navbar-nav
+{
+   position: relative!important;
+   left:60%!important;
+   width: 90%!important;  
+}
+
+nav li a
+{
+    color: white!important;
+    display: inline-block!important;
+    font-size: 2rem;
+    font-family: Verdana;
+    margin-right: 20%;
+    width: 100%;
+}
+
+nav li a:hover
+{
+    border-bottom: 4px solid aqua;
+    color: aqua!important;
+}

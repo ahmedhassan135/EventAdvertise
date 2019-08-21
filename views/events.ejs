@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="EventsStyle.css">
+<style>
+  body
+{
+    background: #525252;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3d72b4, #525252);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3d72b4, #525252); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@media only screen and (max-width: 1600px)
+{
+    .navbar-nav
+    {
+        position: relative;
+        left: 30%!important;
+    }
+    .col-md-5
+    {
+        margin-top: 6%;
+    }
+    h1
+    {
+        margin-top: 40%!important;
+        margin-left: -10%!important;
+    }
+
+}
+
+@media only screen and (max-width: 1300px)
+{
+    .navbar-nav
+    {
+        position: relative;
+        left: 40%!important;
+    }
+    .col-md-5
+    {
+        margin-top: 6%;
+    }
+    h1
+    {
+        margin-top: 60%!important;
+        margin-left: -20%!important;
+    }
+}
+
+@media only screen and (max-width: 1100px)
+{
+    .navbar-nav
+    {
+        position: relative;
+        left: 20%!important;
+    }
+    .col-md-5
+    {
+        margin-top: 6%;
+    }
+    h1
+    {
+        margin-top: 60%!important;
+        margin-left: -20%!important;
+    }
+}
+
+@media only screen and (max-width: 1400px)
+{
+    .navbar-nav
+    {
+        position: relative;
+        left: 40%!important;
+    }
+    .col-md-5
+    {
+        margin-top: 6%;
+    }
+    h1
+    {
+        margin-top: 40%!important;
+        margin-left: -10%!important;
+    }
+
+
+}
+
+@media only screen and (max-width: 1100px)
+{
+    .navbar-nav
+    {
+        position: relative;
+        left: 30%!important;
+    }
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top mb-5">
+        <a class="navbar-brand" href="#">Event Advertiser</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href=<%= idvarhome%>>Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=<%= idvaruniversities%>>Universities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=<%= idvarprofile%>>My Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login"><%= logout%></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+		<div class="mt-5">
+		</div>
+<div class="row">
+<div class="col-md-5">
+<hr style="border-top:4px solid blue">
+</div>
+<div class="col-md-2">
+<h1 class="text-center"style="color:white;">Events</h1>
+</div>
+<div class="col-md-5">
+<hr style="border-top:4px solid blue">
+</div>
+</div>
+<div class="container">
+
+  <div class="col">
+
+    <a class="card-container">
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="card">
+        <h2>FOOTBALL TOURNAMENT</h2>
+		<div href="#" class="btn btn-primary">Details</div>
+        <span class"chev">&rsaquo;</span>
+      </div>
+    </a>
+
+    <a class="card-container">
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="card">
+        <h2>MUSIC COMPTETITION</h2>
+		<div href="#" class="btn btn-primary">Details</div>
+        <span class"chev">&rsaquo;</span>
+      </div>
+    </a>
+
+    <a class="card-container">
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="card">
+        <h2>WORKSHOP</h2>
+		<div href="#" class="btn btn-primary">Details</div>
+        <span class"chev">&rsaquo;</span>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="col">
+
+    <a class="card-container">
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="card" href="www.google.com">
+        <h2>GAMING COMPETITION</h2>
+		<div href="#" class="btn btn-primary">Details</div>
+        <span class"chev">&rsaquo;</span>
+      </div>
+    </a>
+
+    <a class="card-container">
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="card">
+        <h2>CONCERT</h2>
+		<div href="#" class="btn btn-primary">Details</div>
+
+        <span class"chev">&rsaquo;</span>
+      </div>
+    </a>
+
+
+    <a class="card-container">
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="card">
+         <h2>TRIP</h2>
+		 <div href="#" class="btn btn-primary">Details</div>
+        <span class"chev">&rsaquo;</span>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="col">
+
+    <a class="card-container">
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="card">
+        <h2>TOUR</h2>
+		<div href="#" class="btn btn-primary">Details</div>
+        <span class"chev">&rsaquo;</span>
+      </div>
+    </a>
+
+    <a class="card-container">
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="card">
+        <h2>ARTS COMPETITION</h2>
+
+		<div href="#" class="btn btn-primary">Details</div>
+        <span class"chev">&rsaquo;</span>
+      </div>
+    </a>
+
+    <a class="card-container">
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="overlay"></div>
+      <div class="card">
+        <h2>GAMING COMPETITION</h2>
+		<div href="#" class="btn btn-primary">Details</div>
+        <span class"chev">&rsaquo;</span>
+      </div>
+    </a>
+
+  </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.0.1/color-thief.min.js"></script>
+</body>
+</html>

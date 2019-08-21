@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./bootstrap-4.3.1-dist/js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="./bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="homepage.css">
+    <script src="homepage.js"></script>
+    <link type="text/css" rel="stylesheet" href="./bootstrap-4.3.1-dist/js/bootstrap.min.js">
+    <title>Homepage</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" >Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#universities">Universities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Events">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  id="MyEvents" href="/profile" >My Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="login" href="/login">logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="carousel">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="gaming.jpg" style="height: 85%;" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Gaming </h5>
+                        <p>Biggest Competition</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item ">
+                    <img class="d-block w-100" src="swimming.jpg" style="height: 85%;" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>How Fast Are You?</h5>
+                    <p>Participate in swimming Competition</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="cricket.jpg" style="height: 85%;" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                            <h5>Can you hit Farther?</h5>
+                            <p>Participate in Cricket Tournament</p>
+                            </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img class="d-block w-100" src="volleyball.jpg" style="height: 85%;" alt="Third slide">
+                      <div class="carousel-caption d-none d-md-block">
+                            <h5>Can You Jump Higher?</h5>
+                            <p>The Volley Ball Tournament is Here !</p>
+                            </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img class="d-block w-100" src="chess.jpg" style="height: 85%;" alt="Third slide">
+                      <div class="carousel-caption d-none d-md-block">
+                            <h5>Can You Think Faster?</h5>
+                            <p>Participate in rapid chess</p>
+                            </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="football.jpg" style="height: 85%;" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                            <h5>How Fast Are You?</h5>
+                            <p>Participate in swimming Competition</p>
+                            </div>
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+  </div>
+
+  <div class="main main-raised">
+     <div class="container" id="Events">
+            <h3>Events</h3>
+    </div>
+    <div class="row1">
+            <div class="row card-columns">
+                    <div class="col-2 mr-5">
+                            <div class="card border-0">
+                                    <a href="/universities"><img src="Sports.jpg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                      <p class="card-text">Sports</p>
+                                    </div>
+                             </div>
+                    </div>
+                    <div class="col-2 mr-5 ">
+                            <div class="card border-0" >
+                              <a href="/universities"><img src="arts.jpg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                      <p class="card-text">Arts</p>
+                                    </div>
+                             </div>
+                    </div>
+                    <div class="col-2 mr-5 ">
+                            <div class="card border-0" >
+                              <a href="/universities"><img src="technical.jpg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                      <p class="card-text">Technical</p>
+                                    </div>
+                             </div>
+                    </div>
+                  </div>
+
+    </div>
+    <div class="row2">
+            <div class="row card-columns">
+                    <div class="col-2 mr-5">
+                            <div class="card border-0">
+                              <a href="/universities"><img src="social.jpg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                      <p class="card-text">Social</p>
+                                    </div>
+                             </div>
+                    </div>
+                    <div class="col-2 mr-5 ">
+                            <div class="card border-0" >
+                                    <a href="/universities"><img src="gaminge.jpg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                      <p class="card-text">E-Gaming</p>
+                                    </div>
+                             </div>
+                    </div>
+                    <div class="col-2 mr-5 ">
+                            <div class="card border-0" >
+                                    <a href="/universities"><img src="dramatics.jpg" class="card-img-top" alt="..."></a>
+                                    <div class="card-body">
+                                      <p class="card-text">Dramatics</p>
+                                    </div>
+                             </div>
+                    </div>
+                  </div>
+    </div>
+    <a type="button" href="/home" class="btn" style="background:rgba(0, 0, 68, 1); margin-left: 40%; margin-top: 5%; width: 20%; font-size: 2rem; font-family: Verdana; color: white; ">Register Event</a>
+<hr>
+    <div class="container2" id="universities">
+            <h3>Universities</h3>
+    </div>
+    <div class="row1">
+            <div class="row card-columns">
+                    <div class="col-2 mr-5">
+                    <a href="/categories"><img src="NUST.png" class="rounded-circle" width="60%" height="60%"></a>
+                           <p>NUST</p>
+                    </div>
+                    <div class="col-2 mr-5 ">
+                           <a href="/categories"><img src="giki.png" class="rounded-circle" width="60%" height="60%"></a>
+                           <p>GIKI</p>
+                    </div>
+                    <div class="col-2 mr-5 ">
+                                    <a href="/categories"><img src="fast.png" class="rounded-circle" width="60%" alt="..."></a>
+                                      <p>FAST</p>
+                             </div>
+                    </div>
+    </div>
+    <div class="row2">
+            <div class="row card-columns">
+                    <div class="col-2 mr-5">
+                                    <a href="/categories"><img src="IMSCEINCES.png" class="rounded-circle" width="60%" height="60%" alt="..."></a>
+                                      <p class="card-text">IMSciences</p>
+                    </div>
+                    <div class="col-2 mr-5 ">
+                                  <a href="/categories"><img src="cust.png" class="rounded-circle" width="60%" height="60%" alt="..."></a>
+                                    <p class="card-text">CUST</p>
+                             </div>
+                  </div>
+
+    </div>
+</div>
+<hr style="border-color: #3d72b4;">
+<footer id="myFooter" class="bg-dark">
+            <div class="row">
+                <div class="col-sm-4 myCols">
+                    <h5>Email</h5>
+                    <h2>Ev@gmail.com</h2>
+                </div>
+                <div class="col-sm-4 myCols">
+                    <h5>Address</h5>
+                    <h2>Islamabad</h2>
+                </div>
+                <div class="col-sm-4 myCols">
+                    <h5>Contact</h5>
+                    <h2>123456789</h2>
+                </div>
+            </div>
+        <div class="footer-copyright">
+            <p>© 2016 Copyright Text </p>
+        </div>
+    </footer>
+    <!-- <script>
+    var login = document.getElementById("login");
+    var url = document.URL;
+    var x = id;
+    var check_id = url.includes(x);
+    console.log(check_id);
+    if(check_id==false)
+    {
+      login.innerText = "Login";
+      var myevents = document.getElementById("MyEvents");
+      console.log(myevents);
+      myevents.href = "/login";
+    }
+    else
+    {
+      login.innerText = Name;
+    }
+
+    </script> -->
+</body>
+</html>

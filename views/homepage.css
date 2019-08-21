@@ -1,0 +1,359 @@
+body
+{
+    background: #525252;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3d72b4, #525252);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3d72b4, #525252); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0!important;
+    padding: 0!important;
+    overflow-x: hidden;
+}
+
+
+nav.navbar
+{
+    opacity: 0.7;
+    margin-top: -5in;
+}
+
+.navbar-brand
+{
+    color: white!important;
+    font-family: Verdana;
+    font-size: 2rem;
+}
+
+.navbar-nav
+{
+   position: relative!important;
+   left:60%!important;
+   width: 90%!important;
+}
+
+nav li a
+{
+    color: white!important;
+    display: inline-block!important;
+    font-size: 2rem;
+    font-family: Verdana;
+    margin-right: 40%;
+    width: 100%;
+}
+
+nav li a:hover
+{
+    border-bottom: 4px solid aqua;
+    color: aqua!important;
+}
+
+@media only screen and (max-width: 1300px)
+{
+    .navbar-nav
+    {
+        position: relative;
+        left: 40%!important;
+    }
+
+    .carousel h5
+    {
+        font-size: 4rem;
+    }
+
+    .carousel p
+    {
+        font-size: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 1100px)
+{
+    .navbar-nav
+    {
+        position: relative;
+        left: 20%!important;
+    }
+
+    .carousel h5
+    {
+        font-size: 2rem;
+    }
+
+    .carousel p
+    {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 1400px)
+{
+    .navbar-nav
+    {
+        position: relative;
+        left: 40%!important;
+    }
+
+    .carousel h5
+    {
+        font-size: 2rem;
+    }
+
+    .carousel p
+    {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 1100px)
+{
+    .navbar-nav
+    {
+        position: relative;
+        left: 30%!important;
+    }
+
+    .carousel h5
+    {
+        font-size: 2rem;
+    }
+
+    .carousel p
+    {
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 1400px)
+{
+    .card-text
+    {
+        font-size: 1rem!important;
+    }
+    h3#Events
+    {
+        font-size: 3rem;
+        margin-left: 42%;
+    }
+    h3#universities
+    {
+        font-size: 3rem;
+        margin-left: 35%;
+    }
+    a.btn
+    {
+        font-size: 1rem!important;
+    }
+}
+
+
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .carousel-caption
+  {
+      position: relative;
+      bottom: 50%;
+      width: 70%!important;
+      left: 15%;
+      font-family: Verdana;
+      font-size: 2rem;
+  }
+
+  h5
+  {
+    font-family: Verdana;
+    font-size: 7rem;
+  }
+
+  .carousel-item img
+  {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+  }
+
+
+  .carousel
+  {
+      height: 50%!important;
+  }
+
+  .main
+  {
+    background: rgba(0, 0, 68, 0.5)!important;
+    width: 96%;
+    height: auto;
+    margin-left: 2%;
+    border-radius: 8px;
+  }
+
+  div.container
+  {
+      color: white;
+      font-family: Verdana;
+      margin: 0!important;
+  }
+
+  .main h3
+  {
+      font-size: 5rem;
+      font-weight: bolder;
+      margin-left: 40%;
+      color: white;
+  }
+
+
+  .row1
+  {
+      width: 100%;
+      margin-top: 10%;
+      margin-left: 22%;
+  }
+
+  .card-body
+  {
+      background: rgba(0, 0, 68, 0.8);
+      border-color: #000044;
+      color: white;
+      font-family: Verdana;
+      font-size: 2rem;
+  }
+
+  .row2
+  {
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 22%;
+  }
+
+   h3.uniheading
+  {
+    margin-top: 5%;
+    font-size: 5rem;
+    font-weight: bolder;
+    margin-left: 36%;
+    color: white;
+    font-family: Verdana;
+  }
+  hr
+  {
+      border-color: #3d72b4;
+  }
+
+  .col-2,.mr-5 p
+  {
+      font-family: Verdana;
+      font-size: 2rem;
+      color: white;
+      text-align: center;
+  }
+
+  #myFooter {
+    color:white;
+}
+
+#myFooter .footer-copyright{
+	padding-top:3px;
+	padding-bottom:3px;
+	text-align: center;
+}
+
+#myFooter .footer-copyright p{
+	margin:10px;
+	color: #ccc;
+}
+
+#myFooter ul{
+	list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+
+}
+
+#myFooter h5{
+    font-family: Verdana;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    margin-top: 10%;
+}
+
+#myFooter a{
+	color:#d2d1d1;
+	text-decoration: none;
+}
+
+#myFooter a:hover, #myFooter a:focus{
+	text-decoration: none;
+	color:white;
+}
+
+#myFooter .myCols{
+	text-align: center;
+}
+
+#myFooter .social-networks{
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 38px;
+}
+
+#myFooter .social-networks a{
+    font-size: 32px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: #f9f9f9;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+#myFooter .social-networks a:hover{
+	text-decoration: none;
+
+}
+
+#myFooter .facebook:hover{
+	color:#0077e2;
+}
+
+#myFooter .google:hover{
+	color:#ef1a1a;
+}
+
+#myFooter .twitter:hover{
+	color: #00aced;
+}
+
+@media screen and (max-width: 767px){
+	#myFooter {
+		text-align: center;
+	}
+}
+
+#myFooter h2
+{
+    font-size: 1rem;
+}
+
+
+a.btn:hover
+{
+    background: #3d72b4!important;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 5px 5px 20px #fff, 0 0 20px #fff, 0 0 30px #3d72b4, 0 0 40px #3d72b4, 0 0 50px #3d72b4, 0 0 60px #e60073, 0 0 70px #3d72b4;
+    }
+    to {
+        text-shadow: 10px 10px 40px #fff, 0 0 30px #0077e2, 0 0 40px #0077e2, 0 0 30px #0077e2, 0 0 60px #0077e2, 0 0 70px #0077e2, 0 0 80px #0077e2;
+    }
+}
